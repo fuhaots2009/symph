@@ -406,20 +406,7 @@ footer{padding:130px 24px 72px;text-align:center;color:var(--ink-soft);font-size
 <!-- ============ 年度总结场景流 ============
      开场信 → 统计逐屏 → 第一次问答 → 高光时刻（JS 渲染）
      地图场景由 places.inc.html 静态提供（场景流最后一屏），并在此收尾 #scenes -->
-<div id="scenes"><!-- ============ 我们去过的地方（场景流最后一屏）============
-     由 emit.js 从 content.js 的 PLACES[] 生成，不得手改。
-     标点是静态 HTML：JS 禁用也可见。第 5 步把占位底图换成 assets/img/map.jpg（≤300KB）。 -->
-<section class="scene scene-map">
-  <div class="section-head"><span class="en">Places</span><h2>我们去过的地方</h2></div>
-  <div class="map-wrap">
-    <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%231c1836'/%3E%3Ctext x='600' y='440' font-size='30' fill='%236f6a8f' text-anchor='middle' font-family='sans-serif'%3E地图占位 4:3%3C/text%3E%3C/svg%3E" alt="地图占位图">
-    <div class="pin" style="left:68%;top:62%"><span class="dot"></span><span class="name">上海</span><span class="date">2021.12</span></div>
-    <div class="pin" style="left:47%;top:36%"><span class="dot"></span><span class="name">杭州</span><span class="date">2022.04</span></div>
-    <div class="pin" style="left:56%;top:47%"><span class="dot"></span><span class="name">北京</span><span class="date">2023.10</span></div>
-  </div>
-  <p class="scene-hint">左右滑动，继续</p>
-</section>
-</div><!-- /#scenes（由 index.head.html 打开） -->
+<div id="scenes"></div><!-- /#scenes（由 index.head.html 打开；地图板块已移除） -->
 <script>
 // ================================================================
 // generated.js —— 由 emit.js 生成，任何人不得手改。
