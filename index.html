@@ -8132,6 +8132,12 @@ const PLACES = [
     letterDate.className = "scene-letter-date";
     letterDate.textContent = "2021.12.10 — 2026.08.16";
     intro.appendChild(letterDate);
+    var startBtn = makeButton("开 始");
+    startBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      advance();
+    });
+    intro.appendChild(startBtn);
     var introHint = makeHint("点一下 · 或左右滑动");
     intro.appendChild(introHint);
     container.appendChild(intro);
